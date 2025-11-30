@@ -19,6 +19,20 @@ Marketing teams aim to optimize advertisement strategies to maximize user conver
   - Conversion rates by group, day, and hour
   - Visualizations using bar charts and line plots
 
+### Visualizations
+
+**Conversion Rate by Test Group:**
+
+![Conversion Rate by Group](images/conversion_rate_group.png)
+
+**Conversion Rate by Day:**
+
+![Conversion Rate by Day](images/conversion_rate_day.png)
+
+**Conversion Rate by Hour:**
+
+![Conversion Rate by Hour](images/conversion_rate_hour.png)
+
 ## Conversion Metrics
 
 - **Conversion Rate (Ad vs PSA)**:
