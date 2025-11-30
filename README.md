@@ -6,8 +6,8 @@ Marketing teams aim to optimize advertisement strategies to maximize user conver
 
 ## Project Details
 
-- [**Dataset**]: (https://github.com/Ibrahim-Khawer/ab-testing-for-marketing-ads/blob/main/marketing_AB.csv) - 588,101 records
-- **Tools & Libraries**: Python (**Pandas, NumPy, Seaborn, Matplotlib, SciPy**)
+- **Dataset**: [Marketing A/B Data](https://github.com/Ibrahim-Khawer/ab-testing-for-marketing-ads/blob/main/marketing_AB.csv) - 588,101 records
+- **Tools & Libraries**: Python (**Pandas, NumPy, Seaborn, Matplotlib, statsmodels**)
 - **Code**: [Click here to view notebook](https://github.com/Ibrahim-Khawer/ab-testing-for-marketing-ads/blob/main/AB_Testing_Marketing_Ads.ipynb)
 
 ## Data Preparation
