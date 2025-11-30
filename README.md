@@ -1,72 +1,59 @@
 A/B Testing for Marketing Ads
-Project Overview
+Business Problem
 
-This project analyzes the performance of two marketing campaigns (“Ad” vs “PSA”) to determine which drives higher user conversion. Using real campaign data, the goal is to identify conversion differences across ad types, days of the week, and hours of the day, providing actionable insights for marketing strategy.
+Marketing teams aim to optimize advertisement strategies to maximize user conversions. This project evaluates the effectiveness of two types of ads—commercial ads (Ad) and public service announcements (PSA)—to determine which drives higher conversion rates. By identifying statistically significant differences in user engagement, businesses can allocate advertising budgets more efficiently and improve campaign ROI.
 
-Dataset
+Project Details
 
-Source: Marketing A/B campaign dataset (internal / Kaggle style)
+Dataset: Marketing A/B Data
+ - 588,101 records
 
-Size: 588,101 user interactions
+Tools & Libraries: Python (Pandas, NumPy, Seaborn, Matplotlib, SciPy)
 
-Columns:
+Code: Click here to view notebook
 
-user_id – unique user identifier
+Data Preparation
 
-test_group – Ad vs PSA group
+Data Cleaning: Removed unnecessary columns, checked for duplicates, ensured correct data types.
 
-converted – 0/1 conversion indicator
+Exploratory Data Analysis (EDA):
 
-total_ads – number of ads seen by the user
+Distribution of users across test groups
 
-most_ads_day – day with most ad exposure
+Overall conversion distribution
 
-most_ads_hour – hour with most ad exposure
+Conversion rates by group, day, and hour
 
-Key Steps
+Visualizations using bar charts and line plots
 
-Data Cleaning
+Conversion Metrics
 
-Removed unnecessary columns (Unnamed: 0)
+Conversion Rate (Ad vs PSA):
 
-Checked for duplicates and missing values
+Ad: 2.55%
 
-Verified column types
+PSA: 1.79%
 
-Exploratory Data Analysis (EDA)
+Absolute Lift: 0.0077 → Ad group conversion higher by ~0.77 percentage points
 
-Univariate analysis: Count plots & pie charts for categorical variables (test_group, converted, most_ads_day, most_ads_hour)
+Relative Lift: 43% → Ad group performs 43% better relative to PSA
 
-Numerical distribution: Histograms and boxplots for total_ads (with skew adjustment for outliers)
+Statistical Test
 
-Bivariate Analysis
+Two-Proportion Z-Test: Z = 7.37, p < 0.000001 → statistically significant difference
 
-Conversion rates by test group, day, and hour
+Interpretation: The Ad group truly performs better; difference is real, not random. You can confidently recommend running the Ad version.
 
-Crosstabs and bar charts to visualize patterns
+Key Findings
 
-Statistical Testing
+Conversion rates vary by day of week (Monday and Tuesday highest) and hour of day (4 PM and 8 PM peak).
 
-Conversion differences by group: t-test / Mann-Whitney U test
+Users who saw more ads were more likely to convert, highlighting the importance of repeated exposure.
 
-Day and hour significance: Chi-square test
+Recommendations
 
-Key insight: Differences between Ad and PSA groups are statistically significant
+Prioritize commercial ads over PSAs for higher conversions.
 
-Visualization
+Optimize ad placements based on high-performing days and hours to maximize user engagement.
 
-Bar charts for conversion rates by group
-
-Hourly and daily conversion trends
-
-Boxplots showing relationship between total_ads and conversion
-
-Key Insights
-
-Ad group has higher conversion rate than PSA group
-
-Peak conversions occur on Tuesday and Wednesday, around 10 AM–2 PM
-
-Users exposed to fewer than 50 ads convert at slightly higher rates; overexposure does not improve conversions
-
-Statistical tests confirm that ad type, day, and hour affect conversion significantly
+Repeated exposure to ads increases conversion likelihood; consider showing relevant ads multiple times per user.
